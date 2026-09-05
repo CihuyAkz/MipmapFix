@@ -39,7 +39,7 @@ jobs:
       - name: Generate Gradle wrapper (jika belum ada)
         run: |
           if [ ! -f "./gradlew" ]; then
-            gradle wrapper --gradle-version 8.10
+            gradle wrapper --gradle-version latest
           fi
 
       - name: Grant execute permission for gradlew
@@ -69,4 +69,3 @@ jobs:
             build/reports
             **/build/reports
           if-no-files-found: ignore
-
