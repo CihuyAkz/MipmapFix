@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "mipmapstabilizer",
+	"version": "${version}",
+	"name": "Mipmap Stabilizer",
+	"description": "Menstabilkan pemilihan mipmap level agar texture tidak flicker/berkedip saat Mipmap Level dinaikkan, terutama dengan resource pack beresolusi non-ideal.",
+	"authors": ["you"],
+	"contact": {},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.example.mipmapstabilizer.MipmapStabilizerClient"
+		]
+	},
+	"mixins": [
+		"mipmapstabilizer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

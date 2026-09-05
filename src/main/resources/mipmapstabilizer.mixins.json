@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.example.mipmapstabilizer.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"AbstractTextureMixin",
+		"TextureAtlasMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
